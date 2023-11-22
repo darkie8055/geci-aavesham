@@ -301,7 +301,7 @@
                         <td>53</td>
                     </tr>
                     <tr class="second-color">
-                        <td>2</td>
+                        <td>2 </td>
                         <td>MECHANICAL ENGINEERING</td>
                         <td>31</td>
                     </tr>
@@ -426,7 +426,11 @@
                 var eventsTable1 = document.getElementById("events-table");
                 var eventsTable2 = document.getElementById("events-table2");
         
-                if (day === 1) {
+                if (day === 0) {
+                    leaderboardTable.classList.remove("hidden");
+                    eventsTable1.classList.add("hidden");
+                    eventsTable2.classList.add("hidden");
+                } else if (day === 1) {
                     leaderboardTable.classList.add("hidden");
                     eventsTable1.classList.remove("hidden");
                     eventsTable2.classList.add("hidden");
@@ -434,7 +438,7 @@
                     leaderboardTable.classList.add("hidden");
                     eventsTable1.classList.add("hidden");
                     eventsTable2.classList.remove("hidden");
-                
+                }
             }
         </script>
         
